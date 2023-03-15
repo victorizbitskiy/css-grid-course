@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box1 {
+  background: lightsalmon;
+}
+.box2 {
+  background: lightskyblue;
+}
+.box3 {
+  background: lightgreen;
+}
+
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
