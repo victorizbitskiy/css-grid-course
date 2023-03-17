@@ -19,19 +19,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box3";
 }
 
-/* .box3 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-} */
-
 .box1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
+  grid-area: box1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .box2 {
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
 }
